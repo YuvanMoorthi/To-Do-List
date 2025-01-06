@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>To-Do List</title>
+      <link rel="stylesheet" href="./style.css" />
+      <script defer src="./script.js"></script>
+   </head>
+   <body id="theme">
+      <main>
+         <section id="headSection">
+            <h1>To-Do List 😎</h1>
+         </section>
+         <div id="container">
+            <section id="inputSection">
+               <label for="task-input" class="visually-hidden"
+                  >Add a Task</label
+               >
+               <input
+                  type="text"
+                  id="task-input"
+                  placeholder="Type Something | 🤑"
+               />
+               <button id="add-task-button">+</button>
+            </section>
+            <section id="outputSection">
+               <ol class="task-list" id="task-list"></ol>
+            </section>
+         </div>
+      </main>
+   </body>
+</html>

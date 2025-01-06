@@ -1,0 +1,144 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+main {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 60%;
+   background-image: url("./BG-image.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   border-radius: 20px 20px 100px 100px;
+}
+
+#container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+
+   width: 100%;
+}
+
+#headSection {
+   display: flex;
+   justify-content: space-around;
+   background-color: rgb(13, 13, 14);
+   color: whitesmoke;
+   border-radius: 5px;
+   height: 3rem;
+   align-items: center;
+   width: 100%;
+}
+
+#switchTheme button {
+   font-size: 20px;
+   padding: 5px 15px;
+   border: 1px solid gray;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+#switchTheme button:hover {
+   background-color: lightgray;
+}
+
+#inputSection {
+   width: 95%;
+   height: 4em;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 20px 0 10px 0px;
+   border-radius: 15px;
+   padding: 10px;
+   background: transparent;
+   color: whitesmoke;
+}
+
+#task-input {
+   height: 2rem;
+   width: 70%;
+   outline: none;
+   border-radius: 10px;
+   padding-left: 10px;
+   border: 1px solid gray;
+}
+
+#inputSection button {
+   height: 2rem;
+   width: 8%;
+   border-radius: 10px;
+   border: none;
+   font-size: 1.5rem;
+   cursor: pointer;
+   background-color: lightgreen;
+   transition: transform 0.2s;
+   margin-left: 10px;
+}
+
+#inputSection button:hover {
+   transform: scale(1.1);
+}
+
+#outputSection {
+   width: 98%;
+   height: 70vh;
+}
+
+.task-list {
+   padding: 10px;
+   height: 15px;
+}
+
+.task-collection {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+   background-color: white;
+   border: 1px solid lightgray;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   height: 35px;
+}
+
+.text-data {
+   width: 70%;
+}
+
+.checkbox-input {
+   transform: scale(1.5);
+}
+
+.delete-button {
+   background-color: red;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   padding: 5px;
+   width: 10%;
+   transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+   background-color: darkred;
+}
